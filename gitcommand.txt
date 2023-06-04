@@ -5,3 +5,11 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/karthikeyanselvam1/MeanStack.git
 git push -u origin main
+
+
+git clone https://github.com/karthikeyanselvam1/Karthikeyan_MeanStack.git
+
+
+git checkout -b "Karthikeyan"
+
+git branch
