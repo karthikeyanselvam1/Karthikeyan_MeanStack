@@ -1,16 +1,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body bgcolor="gray">
-    <div style="text-align: center;">
+    <style>
 
-        <h1>Demo Form Design</h1>
-    <form style="color: lightblue">
-    Name: <input type="text" ><br>
+.mydiv1{
+
+    color: blue;
+    text-align: center;
+    background-color: aqua;
+    float: left;
+    height: 700px;
+    width: 50%;
+}
+.mydiv2{
+
+    color: blueviolet;
+    text-align: center;
+    background-color: coral;
+    float: right;
+    height: 700px;
+    width: 50%
+}
+    </style>
+   
+</head>
+<body>
+    <form>
+    <div class="mydiv1">
+        <h1>Login Page</h1>    
+        Username: <input type="text" style="background-color: bisque; height: 30px; text-align: center;"> <br>
+        Password: <input type="password" style="background-color: bisque; height: 30px; text-align: center; "> <br>
+        <br>
+        <input type="submit" style="background-color: blueviolet;"> 
+        <input type="reset" style="background-color: green;"> <br>
+
+
+        
+    </div>
+
+    <div  class="mydiv2">
+        <h1>Registration Page</h1>  
+        
+        Name: <input type="text" ><br>
     Pass: <input type="password" style="color: brown;"><br>
     Email: <input type="email"><br>   
     Age: <input type="number"><br>    
@@ -36,43 +69,12 @@
     <input type="checkbox"> FullStack
     <input type="checkbox"> Python
     <input type="checkbox"> DataScience
-
-    <!-- <select>
-        <option>Day </option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-    </select>
-    <select>
-        <option>Mon </option>
-        <option>Jan</option>
-        <option>Feb</option>
-        <option>Mar</option>
-        <option>Apr</option>
-        <option>May</option>
-        <option>Jun</option>
-        <option>Jul</option>
-        <option>Aug</option>
-    </select>
-    <select>
-        <option>YR </option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-    </select> -->
+    
     <br>
     <input type="submit" style="background-color: rgb(0, 128, 53); height: 40px; width: 100px; color: white; border-radius: 10px;">
     <input type="reset" >
     <input type="submit" value="Register" ><br>
-    </form>
-
     </div>
-    
+</form>
 </body>
 </html>
