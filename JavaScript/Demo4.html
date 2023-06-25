@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function add() {
+            a = parseInt( document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            Sum = a+b;
+            document.f1.result.value=Sum;
+            // alert("MY Name is "+fullname);    
+        }
+        function sub() {
+            a = parseInt( document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            Sub = a-b;
+            document.f1.result.value=Sub;
+            // alert("MY Name is "+fullname);    
+        }
+        function mul() {
+            a = parseInt( document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            Multiple = a*b;
+            document.f1.result.value=Multiple;
+            // alert("MY Name is "+fullname);    
+        }
+        function div() {
+            a = parseInt( document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            Division = a/b;
+            document.f1.result.value=Division;
+            // alert("MY Name is "+fullname);    
+        }
+    </script>
+
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <h1>Hi please fill the Details</h1>
+        <form name="f1">
+            A : <input style="background-color: gray" type="text" name="a"> <br>
+            B : <input style="background-color: gray;" type="text" name="b"> <br>
+            Result : <input style="background-color: rgb(143, 143, 194);" type="text" name="result"><br>
+            
+            <input  style="background-color: aquamarine;" type="button" value="Add" onclick="add()"> 
+            <input  style="background-color: aquamarine;" type="button" value="Sub" onclick="sub()"> 
+            <input  style="background-color: aquamarine;" type="button" value="Multiple" onclick="mul()"> 
+            <input  style="background-color: aquamarine;" type="button" value="Divide" onclick="div()"> 
+            <input style="background-color: cadetblue;" type="reset">
+        </form>
+        </div>
+    
+</body>
+</html>

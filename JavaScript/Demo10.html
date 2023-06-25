@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myage() {
+            age = document.getElementById('age').value;
+            if(age<18) 
+            {
+                alert("Enter Valid Age");
+                newage = prompt("Please Enter correct Age");
+                rep = confirm("Is this correct age ?");
+                if(rep) {
+                    document.write("Good")
+                }
+                else {
+                    document.write("Please Enter Once again");
+
+                }
+            }    
+            else {
+                alert("Valid Age")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h4 style="color: blue">Age Validation Using Windows Object : alert, confirm, Prompt (BOM : Browser Object Model) </h4>
+        <input type="text" id="age">
+        <input type="submit" value="Enter Age" onclick="myage()">
+    </div>
+</body>
+</html>

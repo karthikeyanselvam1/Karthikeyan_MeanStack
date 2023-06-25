@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(value) {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = parseInt(document.f1.c.value);
+            d = parseInt(document.f1.d.value);
+            e = parseInt(document.f1.e.value);
+            f = parseInt(document.f1.f.value);
+
+            Total = a+b+c+d+e+f;
+            Percentage = Total/6;   
+            document.f1.g.value = Total
+            document.f1.h.value = Percentage
+        }
+    </script>
+</head>
+<body bgcolor=grey>
+    <div style="text-align: center;">
+        <form name="f1">
+            <h1>Mark Sheet</h1>
+            Subject1 : <input type="text" name="a"><br>
+            English : <input type="text" name="b"><br>
+            Hindi : <input type="text" name="c"><br>
+            Science : <input type="text" name="d"><br>
+            Maths : <input type="text" name="e"><br>
+            Social Science : <input type="text" name="f"><br>
+            Total : <input style="text-align: center;" type="text" name="g">
+            Percentage : <input type="text" name="h"><br>
+            <br>
+            <input type="button" value="Calculate" onclick="cal(value)">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+</body>
+</html>

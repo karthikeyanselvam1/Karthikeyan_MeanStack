@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>calling Function with parameter</h1>
+        <input type="button" value="submit"  onclick="abc()">
+
+        
+    <p id="e"></p>
+    <script>
+
+        function abc() {
+            console.log("Hi abc function")
+        }
+        function xyz(num) {
+            console.log("Getting Num Value from xyz function"+num)
+        }
+
+        xyz(100);
+
+        function Employee (firstname, lastname, age, salary) {
+            this.firstname = firstname;
+           this.lastname =  lastname;
+            this.age = age;
+            this.salary = salary
+
+        }
+
+       const myemp = new  Employee("Karthikeyan","Selvam",40,50000);
+       //prototype is used to add some extra parameter to function without distubing existing function
+       Employee.prototype.desig = "Full Stack Developer";
+       document.getElementById('e').innerHTML="My Name is "+myemp.firstname+myemp.lastname+" and Age is "+myemp.age+" , Designation is "+myemp.desig;
+
+    </script>
+    </div>
+</body>
+</html>

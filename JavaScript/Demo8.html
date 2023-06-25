@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc() {
+            alert('Single Click')
+
+        }
+        function xyz() {
+            alert('Double click')
+        }
+function getfullname() {
+   fn =  document.f1.fn.value;
+    ln = document.f1.ln.value;
+    fullname = fn + " " + ln;
+    document.f1.full.value = fullname;
+}
+function aaa() {
+    document.getElementById('fn').style.backgroundColor="lightblue"
+}
+
+function bbb() {
+    document.getElementById('fn').style.backgroundColor="red"
+}
+
+function bgclr(value) {
+    document.getElementById('MyPage').style.backgroundColor=value;
+}
+    </script>
+        
+</head>
+<body id="MyPage">
+    <div style="text-align: center;">
+       <marquee onmouseover="stop()" onmouseout="start()"> <h1>Event or Action Demo</h1>  </marquee>
+       <form name="f1">
+
+        First Name : <input type="text" name="fn" id="fn" onfocus="aaa()" onblur="bbb()"> <br>
+        Last Name : <input type="text" name="ln"><br>
+        Full Name : <input type="text" name="full" onfocus="getfullname()"> <br> 
+        <hr>
+        <button type="button" onclick="abc()">Click</button>
+        <button type="button" ondblclick="xyz()">Double Click</button>
+        <select onchange="bgclr(value)">
+            <option>Choose</option>
+            <option value="red">Red</option>
+            <option value="pink">Pink</option>
+            <option value="grey">Grey</option>
+            <option value="yellow">Yellow</option>
+
+        </select>
+       </form>
+
+    </div>
+
+</body>
+</html>

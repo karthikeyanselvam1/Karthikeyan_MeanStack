@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valid() {
+            name = document.getElementById('uname').value;
+            if(name.length==0 || name.length==null || name.length==undefined) {
+                // alert("Name must ne required ")
+                // document.getElementById('msg').innerText="Name must ne required"
+                document.getElementById('msg').innerHTML="<i style='color:red'>Name must be required</i>"
+            }
+            else if (name.length>=0 && name.length<=3) {
+                // alert("Name must be min 3 char");
+                // document.getElementById('msg').innerText="Name must be min 3 char"
+                document.getElementById('msg').innerHTML="<i style='color:red'>Name must be min 3 char</i>"
+            }
+            else if (name.length>=10 ) {
+                // alert("Name must be min 3 char and Max 10 char");
+                // document.getElementById('msg').innerText="Name must be min 3 char and Max 10 char"
+                document.getElementById('msg').innerHTML="<i style='color:red'>Name must be min 3 char and Max 10 char</i>"
+            }
+            else {
+                // alert("Name is okay");
+                // document.getElementById('msg').innerText="Name is okay"
+                document.getElementById('msg').innerHTML="<i style='color:green' >Name is okay</i>"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Validation Demo</h1>
+        UserName : <br>
+        <input type="text" id="uname"><br>
+        <span id="msg"></span> <br>
+        <input type="button" value="Click" onclick="valid()">
+    </div>
+</body>
+</html>

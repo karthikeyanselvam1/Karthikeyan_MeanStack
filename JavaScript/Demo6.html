@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function add() {
+        //   a =  parseInt(document.f1.a.value);
+        //   b = parseInt(document.f1.b.value);
+        //   sum = a+b;
+        //   document.f1.result.value = sum;
+        // }
+
+        // function sub() {
+        //   a =  parseInt(document.f1.a.value);
+        //   b = parseInt(document.f1.b.value);
+        //   sub = a-b;
+        //   document.f1.result.value = sub;
+        // }
+
+        // function mul() {
+        //   a =  parseInt(document.f1.a.value);
+        //   b = parseInt(document.f1.b.value);
+        //   mul = a*b;
+        //   document.f1.result.value = mul;
+        // }
+
+        // function div() {
+        //   a =  parseInt(document.f1.a.value);
+        //   b = parseInt(document.f1.b.value);
+        //   div = a/b;
+        //   document.f1.result.value = div;
+        // }
+
+        function cal(value) {
+          a =  parseInt(document.f1.a.value);
+          b = parseInt(document.f1.b.value);
+         if(value=="Add") {
+
+            sum = a + b;
+            document.f1.result.value = sum;
+
+         }
+         else if(value=="Sub") {
+
+            sum = a - b;
+            document.f1.result.value = sum;
+
+
+         }
+        
+         else if(value=="Multiple") {
+
+            sum = a * b;
+            document.f1.result.value = sum;
+        }
+
+        else if(value=="Division") {
+            sum = a/b;
+            document.f1.result.value = sum;
+        }
+          
+        }
+
+    </script>
+</head>
+<body bgcolor="green">
+    <div style="text-align: center;">
+        <h1>Hi Calculator</h1>
+         <form name="f1">
+            A Value: <input type="text" name="a"><br>
+            B Value: <input type="text" name="b"><br>
+            Result: <input type="text" name="result"> <br>
+            
+            <br>
+            <input type="button" value="Add" onclick="cal(value)">
+            <input type="button" value="Sub" onclick="cal(value)">
+            <input type="button" value="Multiple" onclick="cal(value)">
+            <input type="button" value="Division" onclick="cal(value)">
+            <input type="reset" name="Clear"> <br>
+
+        </form>
+    </div>
+</body>
+</html> 
